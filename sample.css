@@ -1,1 +1,21 @@
+@charset "utf-8";
 
+html {
+
+font-size: 62.5%;
+
+}
+
+@mixin fontsize($size: 24) {
+
+font-size: $size + px;
+
+font-size: ($size / 10) * 1rem;
+
+}
+
+～（これより上のソースコードは省略しています）～
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$black : #3B4452;
+$gray : #FAFAFA;
+$green_blue : #47B39D;
