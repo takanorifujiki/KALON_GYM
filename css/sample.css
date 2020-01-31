@@ -27,4 +27,7 @@ header {
 
 img {
   max-width: 960px;
+  max-height: 200px;
+  positionn:center;
+  margin:auto;
 }
