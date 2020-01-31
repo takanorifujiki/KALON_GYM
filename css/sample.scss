@@ -1,9 +1,11 @@
+$baseColor: #fdfcf6;
+$subColor: #bea300;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+
+
 @charset "utf-8";
 
-@import 'variables';
-.button {
-    background-color: $keyColor;
-}
 
 html {
 font-size: 62.5%;
@@ -26,35 +28,41 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
-
 header {
     border: 1px solid #000000; /* ボーダー */
-    background-color: #FAFAFA;
-}
+    background-color: black;
 
-#logo_top{
-  position:relative;
-  padding: 0;
-}
+    #logo_top{
+      position:relative;
+      max-width: 80%;
+      margin: 0 auto;
+      text-align:center;
 
-#logo_top img{
-  width:100%;
-  margin:auto;
-}
+      img{
+        width:75%;
+        height: 100%
+      }
 
+      #logo {
+        position:absolute;
+        top: 10%;
+        left: 20%;
+      }
 
-#logo_top  p{
-  position: absolute;/*絶対配置*/
-  color: white;/*文字は白に*/
-  font-weight: bold; /*太字に*/
-  font-size: 1em;/*サイズ2倍*/
-  font-family :Quicksand, sans-serif;/*Google Font*/
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-  text-align: center;
+      p{
+        position: absolute;/*絶対配置*/
+        color: white;/*文字は白に*/
+        font-weight: bold; /*太字に*/
+        font-size: 1em;/*サイズ2倍*/
+        font-family :Quicksand, sans-serif;/*Google Font*/
+        top: 70%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin:0;
+        padding:0;
+        text-align: center;
+      }
+    }
 }
