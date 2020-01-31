@@ -1,24 +1,20 @@
 @charset "utf-8";
 
+@import 'variables';
+.button {
+    background-color: $keyColor;
+}
+
 html {
-
 font-size: 62.5%;
-
 }
 
 @mixin fontsize($size: 24) {
-
 font-size: $size + px;
-
 font-size: ($size / 10) * 1rem;
-
 }
 
-～（これより上のソースコードは省略しています）～
 $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
-$black : #3B4452;
-$gray : #FAFAFA;
-$green_blue : #47B39D;
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -33,17 +29,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 header {
     border: 1px solid #000000; /* ボーダー */
+    background-color: #FAFAFA;
 }
 
-
-#header #main_img {
-  vertical-align: top;
+#logo_top{
+  position:relative;
+  padding: 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
+#logo_top #logo{
+  position :absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#logo_top img{
+  width:100%;
+  margin:auto;
+}
+
+#logo_top  p{
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  font-weight: bold; /*太字に*/
+  font-size: 1em;/*サイズ2倍*/
+  font-family :Quicksand, sans-serif;/*Google Font*/
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
 }
