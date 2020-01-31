@@ -37,16 +37,11 @@ header {
   padding: 0;
 }
 
-#logo_top #logo2{
-  position :absolute;
-  top: 10%;
-  left: 10%;
-}
-
 #logo_top img{
   width:100%;
   margin:auto;
 }
+
 
 #logo_top  p{
   position: absolute;/*絶対配置*/
@@ -61,4 +56,5 @@ header {
   transform: translate(-50%,-50%);
   margin:0;
   padding:0;
+  text-align: center;
 }
