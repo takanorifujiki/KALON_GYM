@@ -19,3 +19,12 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
 $black : #3B4452;
 $gray : #FAFAFA;
 $green_blue : #47B39D;
+
+header {
+    border: 1px solid #000000; /* ボーダー */
+}
+
+
+img {
+  max-width: 960px;
+}
