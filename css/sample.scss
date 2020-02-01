@@ -34,7 +34,7 @@ header {
 
     #logo_top{
       position:relative;
-      max-width: 80%;
+      max-width: 100%;
       margin: 0 auto;
       text-align:center;
 
@@ -65,4 +65,45 @@ header {
         text-align: center;
       }
     }
+}
+
+
+main{
+  background-color: white;
+  text-align: center;
+}
+.container {
+  position:relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  max-width: 75%;
+
+  display:flex;/*メディアクエリ*/
+  flex-direction: row;/*メディアクエリ*/
+  .box2 {
+    width: 80%;
+    border: solid 1px black;
+    box-sizing: border-box;
+    text-align: center;
+    p{
+      position: absolute;/*絶対配置*/
+      color: black;/*文字は白に*/
+      font-weight: bold; /*太字に*/
+      font-size: 1.5em;/*サイズ2倍*/
+      font-family :Quicksand, sans-serif;/*Google Font*/
+      top: 20%;
+      right: 10%;
+    }
+  }
+  .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
