@@ -27,3 +27,33 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     vertical-align: baseline;
 }
+
+
+.slide-wrap {
+  background-color: #ccc;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+}
+.slide-box {
+  height: auto;
+  margin: .5%;
+  width: 24%;
+}
+.slide-box img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+/* スマホサイズでスライダー表示 */
+  .slide-wrap {
+    overflow-x: scroll;
+  }
+  .slide-box {
+    flex: 0 0 70%;
+    margin: auto 1% auto auto;
+  }
+}
