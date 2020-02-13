@@ -1,6 +1,6 @@
 $("#box").text("Hello jQuery!");
 
-$('#slide-box').slick({
+$('.your-class').slick({
   dots: true,
   infinite: true,
   speed: 500,
