@@ -5,7 +5,7 @@ $fontColor: #4c4c4c;
 
 
 @charset "utf-8";
-
+@import 'https://fonts.googleapis.com/css?family=Abel';
 
 html {
 font-size: 62.5%;
@@ -27,33 +27,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     vertical-align: baseline;
 }
-
-
-.slide-wrap {
-  background-color: #ccc;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1024px;
-  width: 100%;
-}
-.slide-box {
-  height: auto;
-  margin: .5%;
-  width: 24%;
-}
-.slide-box img {
-  display: block;
-  height: auto;
-  width: 100%;
+.uppercase {
+    text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
-/* スマホサイズでスライダー表示 */
-  .slide-wrap {
-    overflow-x: scroll;
-  }
-  .slide-box {
-    flex: 0 0 70%;
-    margin: auto 1% auto auto;
-  }
+.button-contact
+{
+    font-size: 20px; /* フォントサイズ */
+    line-height: 0; /* 行の高さ */
+
+    display: block; /* ブロック要素のように扱う */
+    float: right; /* 要素を右寄せ */
+
+    width: 20px; /* 幅 */
+    height: 20px; /* 高さ */
+    margin: 20px 20px 0 0; /* 要素の外側の余白 */
+    padding: 10px; /* 要素の内側の余白 */
+
+    text-align: center; /* テキストの中央寄せ */
+
+    color: #4c4c4c; /* 文字色 */
+    border: 2px solid #4c4c4c; /* ボーダー */
+    -webkit-border-radius: 4px; /* 角丸 */
+       -moz-border-radius: 4px;
+            border-radius: 4px;
 }
