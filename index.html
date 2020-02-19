@@ -27,6 +27,7 @@
 
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/> <!--slick-->
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> <!--slick-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/><!--slick-->
 
 
 
@@ -39,12 +40,12 @@
           <div id="top_image">
             <img src="https://github.com/takanorifujiki/KALON_GYM/blob/master/image/new_top.jpg?raw=true" alt="ロゴ">
           </div>
-          <div class="title1">
+          <h1>
             <p>さぁ!自分革命!<br>思い描く本当の自分になってみませんか?</p>
-          </div>
-          <div class="title2">
+          </h1>
+          <h2>
             <p>当サロンでは、機能解剖学、運動生理学等に基づく専門的な技術と、<br>最先端のフィットネス学の専門家により、<br>確実かつ安全にお客様のボディメイクを実現するサロンです。<br>現在の自分と理想の自分。<br>本格パーソナルトレーニングを体験してみませんか？</p>
-          </div>
+          </h2>
         </div>
       </a>
     </div>
@@ -53,16 +54,24 @@
   <main>
     <div id="main-part" class="container">
       <div class="row">
-        <div id="kalon-why" class="h1">
+
+        <div id="slide_img"class="twelve columns">
+          <img src="" alt="プルダウン">
+          <img src="" alt="ジム">
+          <img src="" alt="ランジー">
+          <img src="" alt="デスク">
+        </div>
+
+        <div id="kalon-why">
           <div class="twelve columns">
-            <a href="#contact" class="button-contact"><i aria-label="お問い合わせ" class="fa fa-envelope-o"></i></a>
+            <a href="#contact" class="button-contact"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
             <p>KALONが選ばれる理由</p>
           </div>
           <div id="text-area" class="twelve columns">
             <p>何度もダイエットしてきたけど結果が出ない,<br>絶対に痩せて周囲を驚かせたい,<br>そんなあなたのために。<br>KALON GYMでは,<br>最先端の運動プログラム学を基に作成されるトレーニングメニュー,<br>細部にまでこだわり続けた食事管理法,<br>資格,実績共に超一流なトレーナーの指導をお約束します。<br>2020年,天神,親不孝通りエリアに,<br>ボディメイク専用の夢空間を再現致しました。</p>
           </div>
         </div>
-        <div id="trainer-intro" class="h2">
+        <div id="trainer-intro">
           <div class="twelve columns">
             <a href="#contact" class="button-contact"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
             <p>トレーナー紹介</p>
@@ -102,6 +111,15 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> <!--slick-->
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!--slick-->
     <script src="slick/slick.min.js"></script> <!--slick-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!--slick-->
+
+    <script type="text/javascript">
+   $(document).ready(function(){
+     $('.your-class').slick({
+       setting-name: setting-value
+     });
+   });
+ </script>
 
 </body>
 </html>
