@@ -31,6 +31,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-transform: uppercase;
 }
 
+
+/* ----------------------------------------
+* button
+---------------------------------------- */
+
 .button-contact
 {
     font-size: 20px; /* フォントサイズ */
@@ -157,3 +162,26 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   line-height: 50px;
   position: relative;
   z-index: 2}
+
+  /* ----------------------------------------
+  * footer
+  ---------------------------------------- */
+  #footer {
+    color: #fff;
+    border-top: 8px solid #3B4552;
+    background: #010A17;
+  }
+
+  #footer .footer-logo {
+    font-size: 24px;
+  }
+  #footer a {
+    color: #fff;
+  }
+  #footer a:hover {
+    color: #ccc;
+  }
+  .footer-02 .footer-copy {
+    text-align: center;
+    font-size: 12px;
+  }
